@@ -14,7 +14,7 @@ variables:
   imageRepository: 'yosemanhpythonsamplevscodeflasktutorial'
   containerRegistry: 'acr4testing.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
-  tag: '$(Build.BuildId)'
+  tag: $(IMAGE_VERSION)
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
